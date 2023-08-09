@@ -64,7 +64,8 @@ class _SelectEventState extends State<SelectEvent> {
                     if (validateShowCodeInput()) {
                       EasyLoading.dismiss();
 
-                      EasyLoading.showSuccess('Event Selected');
+                      EasyLoading.showSuccess('Event Selected',
+                          duration: Duration(milliseconds: 500));
                       Navigator.pushNamed(context, 'enter_licence');
                       showCodeController.text = '';
                     }
